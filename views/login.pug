@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title News App
+    link(rel="stylesheet" href="./assets/css/sub.css")
+  
+  body
+    header
+      h1 News Application
+      h2 Welcome #{username}
+      nav
+        ul
+          li 
+            a(href="#" onclick="fetchNews('home')") Home
+          li 
+            a(href="#" onclick="fetchNews('world')") World
+          li 
+            a(href="#" onclick="fetchNews('sports')") Sports
+          li 
+            a(href="#" onclick="fetchNews('technology')") Technology
+          li 
+            a(href="#" onclick="fetchNews('entertainment')") Entertainment
+    section 
+    main
+      #news-section
+    footer
+      .footer-container
+        .footer-column
+            h3 Follow Us
+        .social-icons
+            a(href="#") 
+                i.fab.fa-facebook
+            a(href="#") 
+                i.fab.fa-twitter
+            a(href="#") 
+                i.fab.fa-instagram
+        .copyright
+            p &copy; 2024 News Aggregator. All rights reserved.
+        .footer-column.newsletter
+            h3 Logout from Account
+            p Stay informed up to date!
+            a(href="index.html", target="_self")
+                button Logout
+
+
+    script(src="./assets/js/api.js")

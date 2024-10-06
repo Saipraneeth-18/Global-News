@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - News Aggregator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+
+    <div id="header"></div>
+
+    <section class="contact-section">
+        <h2 id="register-heading">Login</h2>
+        <div id="regi">
+            <form id="register-form" action="/login" method="post"> 
+                <div id="username-group" class="form-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" name="username" required>
+                    <small id="username-error">Error message</small>
+                </div>
+                <div id="password-group" class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required>
+                    <small id="password-error">Error message</small>
+                </div>
+                <button type="submit" id="register-button">Login</button>
+                <p id="login-link-text">Create your account <a href="register.html" id="login-link">Register here</a></p>
+            </form>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+header {
+    background: #201E43;
+    color: #EEEEEE;
+    padding: 10px 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    background: #134B70;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+nav ul li a:hover {
+    background: #201E43;
+}
+.hero {
+    height: 70vh;
+    background: url('../img/landing.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h1 {
+    color: #EEEEEE;
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.search-section {
+    padding: 20px;
+    text-align: center;
+    background: #EEEEEE;
+}
+.search-form {
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+.search-form input,
+.search-form select {
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+}
+.search-form button {
+    padding: 10px 20px;
+    background-color: #134B70;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.search-form button:hover {
+    background-color: #508C9B;
+}
+.features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 20px;
+    background: #fff;
+}
+.feature {
+    width: 30%;
+    text-align: center;
+}
+.feature img {
+    width: 80px;
+}
+.feature h3 {
+    margin: 15px 0;
+    color: #201E43;
+}
+.feature p {
+    color: #134B70;
+}
+footer {
+    background: #201E43;
+    color: #EEEEEE;
+    padding: 40px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+footer .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 80%;
+}
+footer .footer-column {
+    width: 30%;
+    padding: 10px;
+}
+footer h3 {
+    margin-bottom: 15px;
+    color: #EEEEEE;
+}
+footer ul {
+    list-style: none;
+}
+footer ul li {
+    margin-bottom: 10px;
+}
+footer ul li a {
+    color: #EEEEEE;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+footer ul li a:hover {
+    color: #508C9B;
+}
+footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+footer .social-icons a {
+    color: #EEEEEE;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+footer .social-icons a:hover {
+    color: #508C9B;
+}
+footer .newsletter {
+    text-align: center;
+}
+footer button {
+    padding: 10px 20px;
+    background-color: #134B70;
+    color: #EEEEEE;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer button:hover {
+    background-color: #508C9B;
+}
+footer .copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    footer .footer-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+/* Main content section */
+main {
+    flex: 1; /* Ensures that main content takes up the available space */
+    background: url('../img/landing.jpg') no-repeat center center/cover;
+    height: 70vh;
+    height: max-content;
+}
+
+/* News Section */
+#news-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.article {
+    background-color: gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.article:hover {
+    transform: scale(1.05);
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.article h2 {
+    font-size: 1.5em;
+    color: #5A72A0;
+    margin-bottom: 10px;
+}
+
+.article p {
+    font-size: 1em;
+    color: #1A2130;
+}
+
+.article a {
+    color: #1A2130;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.article a:hover {
+    color: #5A72A0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1A2130;
+    color: #FDFFE2;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-shrink: 0; /* Ensures footer stays at the bottom of the page */
+}
+
+/* Register link */
+.Register {
+    flex: 1;
+    text-align: center;
+}
+
+.Register a {
+    color: #FDFFE2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.Register a:hover {
+    color: #83B4FF;
+}
+
+/* Social media icons */
+.social-media {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.social-media a {
+    margin: 0 10px;
+}
+
+.social-media img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.2);
+}
